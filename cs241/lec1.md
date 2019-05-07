@@ -1,8 +1,10 @@
-## Lecture 1
+# Lecture 1
 
-May 7, 2019
+CS 241 - May 7, 2019
 
 ---
+
+## Introduction
 
 ### Assignments
 
@@ -48,7 +50,7 @@ what does this mean?
 
 ---
 
-### Basics
+## Basics
 
 __bit__ - one binary digit (0 or 1)
 
@@ -57,8 +59,6 @@ __byte__ - 8-bits
 __nibble__ - 4-bits
 
 __word__ - today in the real world 64-bit architecture, 32-bit architecture for $CS\ 241$
-
----
 
 ### Number Systems
 
