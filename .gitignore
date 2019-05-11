@@ -2,3 +2,5 @@
 *.cpp
 *.c
 *.cc
+**/a*
+**/.DS_Store
