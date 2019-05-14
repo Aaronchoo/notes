@@ -85,3 +85,95 @@ bne $1, $0, -3
 jr $31
 ```
 
+### Multiplication and Division
+
+`mult $s, $t`
+
+`div $s, $t`
+
+product could require 64 bits - too big for a single register
+
+product is stored in special registers `hi:lo <-- $s * $t`
+
+division has a quotetient (stored in `lo`) and remainder (`hi`)
+
+unsigned versions `multu` and `divu`
+
+`mfhi $d` and `mflo $d` move from `hi` or `lo` to the destination register
+
+#### Example
+
+Given $1 stores the base address of an array and \$2 stores a valid index, write a program that lods the value into \$3
+
+```assembly
+lis $4
+.word 4
+mult $2, $4
+mflo $5
+add $5, $1, $5
+lw $3, 0($5)
+jr $31
+```
+
+#### Example
+
+Write a program that checks if $2 evenly divides \$1
+
+```assembly
+div $1, $2
+mfhi $3
+bne $3, $0, 4
+lis $4
+.word 1
+add $3, $4, $0
+beq $0, $0, 1
+add $3, $0, $0
+jr $31
+```
+
+---
+
+## Assembly Language
+
+Assembly language replaces the binary encoding of machine language
+
+- Readability, less chance of error
+- Assembler can automatically translate asm to ml
+- 1 line of asm translates to 1 line of ml
+- Has extra features (e.g. `.word`)
+- Allows for comments and extra white space
+
+### Labels
+
+Assemblers allow programmers to label instructions, so programmers don't have to manually calculate jump addresses or branch offsets
+
+#### Example
+
+```assembly
+; Label in beq instruction
+slt $2, $1, $0
+beq $2, $0, foo
+sub $1, $0, $1
+foo:
+jr $31
+```
+
+```assembly
+lis $1
+.word 20
+lis $2
+.word 2
+add $3, $0, $0
+top:
+add $3, $3, $1
+sub $1, $1, $2
+bne $1, 0, top
+jr $31
+```
+
+`top` is assigned memory address `0x14`
+
+Assembler computes $\frac{\texttt{top} - \texttt{PC}}{4} = \frac{\texttt{0x14} - \texttt{0x20}}{4} = -3$ in bne
+
+
+
