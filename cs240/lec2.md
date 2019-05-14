@@ -31,7 +31,6 @@ taking $n_0 = 20$ and $c = 1$, this proves $f(n) \in O(g(n))$
 for $n \ge 1$,
 $$
 75n \le 75n^2​
-
 $$
 
 $$
@@ -117,7 +116,7 @@ $$
 f(n) \in \Theta(g(n))
 $$
 
-if there exist cnonstants $c_1, c_2 \gt 0$ and $n_0 > 0$ such that
+if there exist constants $c_1, c_2 \gt 0$ and $n_0 > 0$ such that
 $$
 c_1|g(n)| \le |f(n)| \le c_2|g(n)|\ for\ all\ n \ge n_0
 $$
