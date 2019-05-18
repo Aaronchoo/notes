@@ -4,3 +4,4 @@
 *.cc
 **/a*
 **/.DS_Store
+stat231/*
