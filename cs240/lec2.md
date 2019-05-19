@@ -253,7 +253,7 @@ $$
 $$
 
 $$
-n \le (fn) \le 3n
+n \le f(n) \le 3n
 $$
 
 So taking $n_0 = 1$, $c_1= 1,\ c_2 = 3$, this proves $f(n) \in \Theta(g(n))$ 
