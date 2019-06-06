@@ -93,7 +93,7 @@ Shortform: $S \rightarrow \epsilon\ |\ (S)\ |\ SS$
 
 ### Derivations
 
-> The application of production rules is called a derivation; ie.e from some initial form, we apply a production rule to obtain the next form. The symbol $\Rightarrow$ means "derives".
+> The application of production rules is called a **derivation**; ie.e from some initial form, we apply a production rule to obtain the next form. The symbol $\Rightarrow$ means "derives".
 
 - $\alpha \Rightarrow \beta$ means $\beta$ can be derived from $\alpha$ by the application of one production rule
 - $\alpha \Rightarrow^k \beta$ means $\beta$ can be derived from $\alpha$ by the application of $k$ production rules
@@ -103,7 +103,7 @@ Example: $\alpha \Rightarrow^k \beta$ means $\alpha = \delta_0 \Rightarrow \delt
 
 ### Intermediate Forms
 
-> we typically start from $S$ and apply production rules until a word $w$ of only terminals is derived. The intermediate strings, however, may contain both terminals and non-terminals.
+> We typically start from $S$ and apply production rules until a word $w$ of only terminals is derived. The intermediate strings, however, may contain both terminals and non-terminals.
 
 i.e. $S \Rightarrow^* w$ where $S \in N$ and $w \in \Sigma^*$
 
@@ -118,7 +118,7 @@ $\alpha A \beta \Rightarrow \alpha \gamma \beta$ if there is a production $A \ri
 
 ### Language of a CFG $G$
 
-> The language of CFG $G$ is the set of strings (terminals only) that we can be derived from the starting non-terminal $S$
+> The language of **CFG** $G$ is the set of strings (terminals only) that we can be derived from the starting non-terminal $S$
 >
 > i.e. $L(G) = \{w \in \Sigma^* | S \Rightarrow^* w\}$
 
