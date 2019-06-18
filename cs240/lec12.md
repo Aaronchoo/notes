@@ -16,7 +16,7 @@ $$
 
 ### Proof of Space Complexity
 
-Prob(tower $j$ has height $\ge i$) = Prob($H_1 … H_i$) = $\frac{1}{2}i$
+Prob(tower $j$ has height $\ge i$) = Prob($H_1 … H_i$) = $\frac{1}{2}^i$
 
 = Prob(tower $j$ has an element at level $i$)
 
@@ -26,7 +26,7 @@ E(# elements at level $i$ of tower $j$)
 
 = $1\ \times$ (Probability that tower $j$ has an element at level $i$) $+\ 0\ \times$ ($1 -$ Prob...)
 
-= $1 \times \frac{1}{2}i$
+= $1 \times \frac{1}{2}^i$
 
 
 
