@@ -16,7 +16,7 @@ Invariant: consumed input + reverse (stack contents) = $\alpha_i$
 
 When top of stack is a non-terminal $A$:
 
-- pop $A$ and push $\alpha^R$ ($\alpha$ reverse) where $A \rightarrow alpha$ is a grammar rule
+- pop $A$ and push $\alpha^R$ ($\alpha$ reverse) where $A \rightarrow \alpha$ is a grammar rule
 
 When top of stack is terminal
 

@@ -52,7 +52,7 @@ height of a binary tree is the length of its longest path from the root to a nod
 > A **heap** is a binary tree with the following two properties:
 >
 > 1. **Structural Property**: All the levels of a heap are completely filled, except for the last level. The filled items in the last level are left-justified.
-> 2. **Heap-order Property**: For any node $i$, the key of the parent of $i$ is the larger than or equal to the key of $i$
+> 2. **Heap-order Property**: For any node$i$, the key of the parent of$i$ is the larger than or equal to the key of $i$
 >
 > The full name for this is *max-oriented binary heap*.
 

@@ -9,7 +9,7 @@ $\text{Predict}(A,a) = \{a \rightarrow  \beta \mid a \in \text{First}(\beta)\}$ 
 - $\text{First}(\beta) = \{a \mid \beta \Rightarrow^* a\delta\}$ where $a \in \Sigma, \delta \in V^*$
 - Need to consider non-terminal that are Nullable; i.e. $A \Rightarrow^* \epsilon$
 
-$\implies \text{Predict}(A,a) = \{a \rightarrow  \beta \mid a \in \text{First}(\beta)\} \cup \{A \rightarrow \beta \mid \text{Nullable}(\beta), a \in \text{Follow}(A)\}$
+$\implies \text{Predict}(A,a) = \{A \rightarrow  \beta \mid a \in \text{First}(\beta)\} \cup \{A \rightarrow \beta \mid \text{Nullable}(\beta), a \in \text{Follow}(A)\}$
 
 
 

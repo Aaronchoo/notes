@@ -36,7 +36,7 @@ CS 241 we want to build a scanner (tokenizer)
 
 ## Kleene's Theorem
 
-> A language $L$ is reguar $\Longleftrightarrow L = L(M)$ for some DFA $M$.
+> A language $L$ is regular $\Longleftrightarrow L = L(M)$ for some DFA $M$.
 
 Recall: the notation $L(M)$ denotes the language of automata $M$. A DFA $M = (\Sigma, Q, q_0, A, \delta)$
 
@@ -46,7 +46,7 @@ Recall: the notation $L(M)$ denotes the language of automata $M$. A DFA $M = (\S
 
 ### Example
 
-Give DFA for $L=\{w \in \{a,b\}*\},w \text{ ends in } abb$ 
+Give NFA for $L=\{w \in \{a,b\}*\},w \text{ ends in } abb$ 
 
 ![](figure4.png)
 

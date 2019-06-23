@@ -101,7 +101,7 @@ $$
 \begin{align}
 T(2n) &= c2^{2n}\\
 &= c(2^n)^2\\
-&= c(\frac{T(n)}{c})\\
+&= c(\frac{T(n)}{c})^2\\
 &= \frac{T(n)^2}{c}
 \end{align}
 $$
@@ -161,8 +161,8 @@ S_1(n) \le \sum_{i=1}^{n}\sum_{j=i}^{n}1 = n^2\text{ (*)}\\
 \begin{align}
 S_1(n) &\ge \sum_{i=1}^{\frac{n}{2}}\sum_{j=i}^{n}1\\
 &\ge \sum_{i=1}^{\frac{n}{2}}\sum_{j = \frac{n}{2}}^{n}\\
-&\ge \sum_{i =1}^{\frac{n}{2}}\\
-&= \frac{n}{2}(\frac{n}{2})^2\\
+&\ge \sum_{i =1}^{\frac{n}{2}}\frac{n}{2}\\
+&= (\frac{n}{2})^2\\
 &= \frac{n^2}{4}\text{ (**)}
 \end{align}
 $$
@@ -206,9 +206,9 @@ $$
 S_2(n) &= \sum_{i=1}^{n}\sum_{j=i}^{n}\sum_{k=i}^{j}1\\
 &\le \sum_{i=1}^{n}\sum_{j=1}^{n}\sum_{k=1}^{n}1\\
 &= n^3\text{ (*)}\\
-S_2(n) &\ge \sum_{i=1}^{\frac{1}{3}}\sum_{j=i}^{n}\sum_{k=i}^{j}1\\
-&\ge \sum_{i=1}^{\frac{1}{3}}\sum_{j=\frac{2n}{3}}^{n}\sum_{k=i}^{j}1\\
-\text{Then, } S_2(n) &\ge \sum_{i=1}^{\frac{n}{3}}\sum_{j=\frac{2n}{3}}{n}\frac{n}{3}\\
+S_2(n) &\ge \sum_{i=1}^{\frac{n}{3}}\sum_{j=i}^{n}\sum_{k=i}^{j}1\\
+&\ge \sum_{i=1}^{\frac{n}{3}}\sum_{j=\frac{2n}{3}}^{n}\sum_{k=i}^{j}1\\
+\text{Then, } S_2(n) &\ge \sum_{i=1}^{\frac{n}{3}}\sum_{j=\frac{2n}{3}}^{n}\frac{n}{3}\\
 &= \sum_{i= 1}^{\frac{n}{3}}(\frac{n}{3})^2\\
 &= (\frac{n}{3})^3\text{ (**)}
 \end{align}

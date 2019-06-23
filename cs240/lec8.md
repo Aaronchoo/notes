@@ -154,6 +154,7 @@ comparison-based algorithms can be expressed as a decision tree.
 
   $\text{# leaves } = n! \le \text{# nodes} \le 2^{h+1}-1 \le 2^{h+1}$
 
-  $\implies \log(n) \le h + 1$
+  $\implies \log(n!) \le h + 1$
 
   so $\log(n!) \in \Theta(n\log n)$ so $h \in \Omega(n \log n)$
+
