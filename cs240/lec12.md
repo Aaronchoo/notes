@@ -32,7 +32,7 @@ E(# elements at level $i$ of tower $j$)
 
 E(# elements in tower $j$)
 
- $= 1 + \frac{1}{2} + \frac{1}{4} + … + \frac{1}{2}i + … = 2$
+ $= 1 + \frac{1}{2} + \frac{1}{4} + … + \frac{1}{2}^i + … = 2$
 
 
 
@@ -64,7 +64,7 @@ expected cost for $L$:
 
 $E(L) = P(x_1) + 2P(x_2) + … + iP(x_i)+(i+1)P(x_{i+1}) + ...$
 
-expectec ost for $L'$:
+expectec cost for $L'$:
 
 $E(L) = P(x_1) + 2P(x_2) + … + iP(x_{i+1})+(i+1)P(x_{i}) + ...$
 
