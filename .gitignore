@@ -1,7 +1,7 @@
-*.pdf
-*.cpp
-*.c
-*.cc
-**/a*
-**/.DS_Store
-stat231/*
+*
+!.gitignore
+!cs241/
+!cs241/*.png
+!cs240/
+!cs246/
+!**/*.md
