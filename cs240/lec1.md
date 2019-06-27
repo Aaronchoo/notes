@@ -32,7 +32,7 @@ The solution is 2
 
 Size of the input is the length of the array
 
-###Algorithms and Programs
+### Algorithms and Programs
 
 #### Algorithm
 

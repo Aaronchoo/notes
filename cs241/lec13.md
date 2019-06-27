@@ -27,7 +27,7 @@ $F \rightarrow a\mid b \mid c \mid (E)$
 
 Is this $LL(1)$? No.
 
-TOS: $E$, next input is: $a$ which rule ro apply
+TOS: $E$, next input is: $a$ which rule to apply
 
 $E \Rightarrow E+T \Rightarrow T+T \Rightarrow F+T \Rightarrow a+T$
 
@@ -37,7 +37,7 @@ $E \Rightarrow T \Rightarrow F \Rightarrow a$
 
 Two derivations, same first symbol.
 
-Left recursion alawys not $LL(1)$
+Left recursion always not $LL(1)$
 
 
 

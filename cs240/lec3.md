@@ -131,7 +131,7 @@ Test1(n)
 	return sum
 ```
 
-Let $T_1(n)$ be the runtime of $Test1(n)$
+Let $T_1(n)$ be the run-time of $Test1(n)$
 
 Then $T_1(n) \in \Theta(S_1(n))$ where $S_1(n)$ is the number of time we enter step 4​
 $$
@@ -223,7 +223,7 @@ Test3(A, n)
 A: array of size n
 	for i <- i to n - 1 do
 		j <- i
-		while j > 0 and A[j] > a[j - 1] do
+		while j > 0 and A[j] > A[j - 1] do
 			swap A[j] and A[j-1]
 			j <- j-1
 ```
